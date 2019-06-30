@@ -90,12 +90,18 @@ class App extends React.Component{
             end = end.setHours(end.getHours()+ Number(doc.data()["dauer"]));
             end = new Date(end);
              //Create a new event for every court reservated
-              let platz;
-            for (platz in doc.data()["platz"]) {
-                //Push entries into array
-                let number = Number(platz);
-                entries.push(new Entry(doc.data()["beschreibung"], end, start , false, number+1));
-            }
+              console.log("Before")
+              console.log(doc.data()["platz"]);
+              for (let platz in doc.data()["platz"]) {
+                  //Push entries into array
+                  console.log("Seas");
+                  console.log(doc.data()["platz"]);
+                let number = doc.data()["platz"][platz];
+
+                  entries.push(new Entry("Platz " + number , end, start , false, number));
+              }
+
+
 
           });
 

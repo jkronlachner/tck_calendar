@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a61a0434-80f9-4207-8bb6-8f25faba719b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/back_end/Database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/back_end/Entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/back_end/asdf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/front_end/newCalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a61a0434-80f9-4207-8bb6-8f25faba719b" name="Default Changelist" comment="finisched">
+      <change afterPath="$PROJECT_DIR$/src/LoginStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/back_end/Router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/back_end/Database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/back_end/asdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/LogIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/front_end/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,60 +24,56 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/back_end/Entry.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/front_end/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="96" column="45" lean-forward="true" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-big-calendar/dist/react-big-calendar.esm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86864">
-              <caret line="5466" column="17" selection-start-line="5466" selection-start-column="17" selection-end-line="5466" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/front_end/newCalendar.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/front_end/LogIn.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="n#!!block;n#Wave#0;n#LogIn#0" />
+                    <element signature="n#!!block;n#player#0;n#LogIn#0" />
+                    <element signature="e#4026#5065#0" />
+                    <element signature="e#5192#40332#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="449">
+                  <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -103,8 +98,12 @@
         <option value="$PROJECT_DIR$/src/back_end/Database.js" />
         <option value="$PROJECT_DIR$/src/back_end/Entry.js" />
         <option value="$PROJECT_DIR$/src/front_end/newCalendar.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/front_end/App.js" />
+        <option value="$PROJECT_DIR$/src/back_end/Router.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/LoginStyle.css" />
+        <option value="$PROJECT_DIR$/src/front_end/LogIn.js" />
       </list>
     </option>
   </component>
@@ -114,12 +113,12 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -135,18 +134,22 @@
               <item name="tck-calendar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
             <path>
-              <item name="tck-calendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tck-calendar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="front_end" type="462c0819:PsiDirectoryNode" />
+              <item name="tck-calendar" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Desktop/LAB73_Projekte/Websiten/tck-calendar" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,6 +157,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -181,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -220,7 +224,11 @@
       <updated>1559471881886</updated>
       <workItem from="1559471883232" duration="14948000" />
       <workItem from="1559738190297" duration="9777000" />
-      <workItem from="1559800270259" duration="1462000" />
+      <workItem from="1559800270259" duration="2969000" />
+      <workItem from="1561026037653" duration="1927000" />
+      <workItem from="1561357697787" duration="305000" />
+      <workItem from="1561650219466" duration="6783000" />
+      <workItem from="1561813415696" duration="7864000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1559506123802</created>
@@ -236,11 +244,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559506197357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finisched">
+      <created>1559804023192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559804023192</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26187000" />
+    <option name="totallyTimeSpent" value="44573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,10 +267,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17216118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -265,18 +280,18 @@
       <window_info id="npm" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32771084" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27755103" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32771084" />
-      <window_info anchor="bottom" id="SonarLint" order="7" weight="0.32771084" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28674698" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.327551" />
+      <window_info anchor="bottom" id="SonarLint" order="7" weight="0.327551" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23469388" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="IvyIDEA" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
@@ -294,7 +309,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="finisched" />
+    <option name="LAST_COMMIT_MESSAGE" value="finisched" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -304,12 +320,12 @@
           <line>22</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/front_end/App.js</url>
+          <line>98</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="javascript-exception">
-          <properties />
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -343,23 +359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/back_end/asdf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" selection-start-line="15" selection-start-column="4" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/back_end/Database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/back_end/asdf.js" />
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -384,27 +384,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file:///System/Volumes/Data/Device/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/back_end/Entry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="594944">
+          <caret line="36979" column="10" selection-start-line="36979" selection-start-column="10" selection-end-line="36979" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-big-calendar/dist/react-big-calendar.esm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86864">
+        <state relative-caret-position="243">
           <caret line="5466" column="17" selection-start-line="5466" selection-start-column="17" selection-end-line="5466" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/back_end/Database.js" />
+    <entry file="file://$PROJECT_DIR$/src/back_end/Entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -413,10 +421,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/front_end/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="96" column="45" lean-forward="true" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+        <state relative-caret-position="-343">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/back_end/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/front_end/LogIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#Wave#0;n#LogIn#0" />
+            <element signature="n#!!block;n#player#0;n#LogIn#0" />
+            <element signature="e#4026#5065#0" />
+            <element signature="e#5192#40332#0" />
           </folding>
         </state>
       </provider>

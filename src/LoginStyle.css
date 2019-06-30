@@ -1,0 +1,85 @@
+.sheet {
+    background-color: white;
+    min-height: available !important;
+    width: auto;
+    margin: auto;
+    margin-left: 2rem;
+    margin-right: 2.1rem;
+    border-radius: 20px !important;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ueberschrift{
+    color: gray;
+    margin-left: 2rem;
+    font-weight: bolder;
+    opacity: 0.5;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+.form{
+    width: 50% !important;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+    width: 80%;
+}
+
+.grafik{
+    padding: 1rem;
+    padding-left: 4rem;
+
+    width: 50% !important;
+    background-color: #2a1547;
+
+}
+
+.header{
+    color: #393939;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.done_button{
+    margin-top: 4rem !important;
+    background-color: #2a1547 !important;
+    font-weight: bolder !important;
+
+
+
+    color: white !important;
+    width: 200px !important;
+    height: 50px !important;
+}
+
+.helpText{
+    text-align: center;
+    margin: 3rem;
+    color: #616161;
+}
+
+.agbText{
+    color: gray;
+    font-size: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .grafik{
+        display: none;
+    }
+    .form{
+        width: 100% !important;
+    }
+
+
+}

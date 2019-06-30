@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './front_end/App';
 import Calendar from './front_end/newCalendar'
+import Redirector from './back_end/Router'
 import firestore from 'firebase';
 
 
@@ -16,5 +17,5 @@ firestore.initializeApp({
 });
 
 
-ReactDOM.render(<App key="app"/>, document.getElementById('root'));
+ReactDOM.render(<Redirector/>, document.getElementById('root'));
 
