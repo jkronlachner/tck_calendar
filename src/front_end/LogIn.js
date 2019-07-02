@@ -1,9 +1,14 @@
 import React from "react";
 import '../LoginStyle.css';
+import backend from '../back_end/Login_Backend'
+import {withRouter} from 'react-router-dom'
 
 import Card from '@material-ui/core/Card'
 import TextField from '@material-ui/core/TextField'
 import Fab from '@material-ui/core/Fab'
+import Loader from '@material-ui/core/LinearProgress'
+
+
 
 class LogIn extends React.Component {
     constructor(props) {
@@ -11,6 +16,13 @@ class LogIn extends React.Component {
         this.state = {
             width: 0,
             height: 0,
+            textFields: {
+                username: "",
+                password: ""
+            },
+            loading: false,
+            textFieldErrors: false,
+            errorLabel: ""
         }
     }
 
@@ -34,10 +46,65 @@ class LogIn extends React.Component {
         window.removeEventListener("resize", this.updateDimensions);
     }
 
+    handleChangeUsername(event){
+        this.setState({
+            textFields : {
+                username: event.target.value,
+                password: this.state.textFields.password
+            }
+        })
+    }
+
+    handleChangePassword(event){
+        this.setState({
+            textFields : {
+                username: this.state.textFields.username,
+                password: event.target.value
+            }
+        })
+    }
+
+    formSubmit(event) {
+
+
+
+        console.log(this.state.textFields);
+        event.preventDefault();
+        this.setState({
+            loading: true,
+            errorLabel: "",
+            textFieldErrors: false
+        });
+        let b = new backend();
+        b.login(
+            this.state.textFields.username,
+            this.state.textFields.password
+        )
+
+                    .then(message => {
+                        this.setState({loading:false});
+                        this.props.history.push('/home');
+                        console.log("Success");
+                        console.log(message);
+                    })
+
+
+            .catch(error => {
+                this.setState({
+                    loading: false,
+                    errorLabel: error.message,
+                    textFieldErrors: true,
+
+                })
+            })
+
+
+
+    }
 
     render() {
-        console.log(window.outerHeight);
         return [
+            this.state.loading && <Loader className={"loader"} />,
             this.Wave(),
             <h1 className={"ueberschrift"}>TENNIS CLUB KRENGLBACH </h1>,
 
@@ -47,8 +114,13 @@ class LogIn extends React.Component {
             >
                 <div className={"form"}>
                     <h2 className={"header"}>Anmelden</h2>
-                    <p>Gib deine Anmeldedaten ein um dich anzumelden.</p>
-                    <form className={"fields"}>
+                    <p className={"helper"}>Gib deine Anmeldedaten ein um dich anzumelden.</p>
+                    <form
+                        className={"fields"}
+                        onSubmit={this.formSubmit.bind(this)}
+                        noValidate
+                        autoComplete={"off"}
+                    >
                         <TextField
                             label={"Benutzername"}
                             id={"phone-number"}
@@ -57,6 +129,9 @@ class LogIn extends React.Component {
                             variant={"outlined"}
                             fullWidth
                             autoFocus={true}
+                            error={this.state.textFieldErrors}
+                            value={this.state.textFields.username}
+                            onChange={this.handleChangeUsername.bind(this)}
                         />
                         <TextField
                             label={"Passwort"}
@@ -66,12 +141,19 @@ class LogIn extends React.Component {
                             type={'password'}
                             variant={"outlined"}
                             fullWidth
+                            error={this.state.textFieldErrors}
+                            value={this.state.textFields.password}
+                            onChange={this.handleChangePassword.bind(this)}
                         />
+                        <p className={"errorLabel"}>{this.state.errorLabel}</p>
                         <Fab
                             variant={"extended"}
                             className={"done_button"}
                             type={"submit"}
-                        >Anmelden</Fab>
+                        >
+                            Anmelden
+                        </Fab>
+
                     </form>
                     <p className={"helpText"}>Hast du noch keine Anmeldedaten? Beantrage sie in der offiziellen TCK-App oder direkt <a href={"www.google.com"}>hier.</a></p>
                     <p className={"agbText"}>Mit der Anmeldung akzeptierst du unsere <a href={"/AGB"}>AGBs</a></p>
@@ -771,7 +853,7 @@ class LogIn extends React.Component {
     }
 }
 
-export default LogIn
+export default withRouter(LogIn);
 
 
 

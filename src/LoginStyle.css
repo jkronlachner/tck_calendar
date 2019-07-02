@@ -68,9 +68,27 @@
     color: #616161;
 }
 
+.helper{
+    text-align: center;
+    color: #616161;
+}
+
 .agbText{
     color: gray;
     font-size: 0.5rem;
+}
+
+.loader{
+    position: fixed;
+}
+
+.errorLabel{
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    position: fixed;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -81,5 +99,17 @@
         width: 100% !important;
     }
 
+    .sheet{
+        margin: 0.5rem !important;
+    }
+
+    .ueberschrift{
+        font-size: 1rem;
+    }
+
+    .header{
+        font-size: 2rem;
+
+    }
 
 }
