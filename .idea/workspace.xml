@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a61a0434-80f9-4207-8bb6-8f25faba719b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/back_end/Login_Backend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/back_end/Storage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/back_end/Entry.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/back_end/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/back_end/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/front_end/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/front_end/App.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/front_end/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/front_end/newCalendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +22,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/front_end/LogIn.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="137" column="46" selection-start-line="137" selection-start-column="46" selection-end-line="137" selection-end-column="46" />
+                <state relative-caret-position="-7">
+                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                     <element signature="n#!!block;n#player#0;n#LogIn#0" />
@@ -44,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/back_end/Router.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+                <state relative-caret-position="250">
+                  <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -102,8 +95,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+                <state relative-caret-position="216">
+                  <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/back_end/Storage.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
@@ -144,10 +146,11 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/back_end/Router.js" />
         <option value="$PROJECT_DIR$/src/back_end/Login_Backend.js" />
-        <option value="$PROJECT_DIR$/src/front_end/LogIn.js" />
         <option value="$PROJECT_DIR$/src/LoginStyle.css" />
+        <option value="$PROJECT_DIR$/src/back_end/Storage.js" />
+        <option value="$PROJECT_DIR$/src/front_end/LogIn.js" />
+        <option value="$PROJECT_DIR$/src/back_end/Router.js" />
       </list>
     </option>
   </component>
@@ -303,7 +306,7 @@
       <workItem from="1561026037653" duration="1927000" />
       <workItem from="1561357697787" duration="305000" />
       <workItem from="1561650219466" duration="6783000" />
-      <workItem from="1561813415696" duration="24367000" />
+      <workItem from="1561813415696" duration="27026000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1559506123802</created>
@@ -333,11 +336,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561889162821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished Login, Back-end and Front-end&#10;Routing&#10;Updaed Firebase configuration">
+      <created>1562073643518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562073643518</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61076000" />
+    <option name="totallyTimeSpent" value="63735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,9 +360,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858758" visible="true" weight="0.17216118" />
-      <window_info id="Structure" order="1" sideWeight="0.50141245" side_tool="true" visible="true" weight="0.17216118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858758" visible="true" weight="0.17216118" />
+      <window_info id="Structure" order="1" sideWeight="0.50141245" side_tool="true" weight="0.17216118" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -362,7 +373,7 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.32959184" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27755103" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27755103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,7 +404,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="finisched" />
     <MESSAGE value="Added Routing, Login-Frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Routing, Login-Frontend" />
+    <MESSAGE value="Finished Login, Back-end and Front-end&#10;Routing&#10;Updaed Firebase configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Login, Back-end and Front-end&#10;Routing&#10;Updaed Firebase configuration" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -493,13 +505,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/back_end/Router.js">
+    <entry file="file://$PROJECT_DIR$/src/back_end/Storage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/back_end/Login_Backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -513,29 +536,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/back_end/Login_Backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/front_end/LogIn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="137" column="46" selection-start-line="137" selection-start-column="46" selection-end-line="137" selection-end-column="46" />
+        <state relative-caret-position="-7">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="n#!!block;n#player#0;n#LogIn#0" />
             <element signature="e#4026#5065#0" />
             <element signature="e#5192#40332#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/back_end/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

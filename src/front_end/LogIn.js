@@ -1,14 +1,14 @@
 import React from "react";
 import '../LoginStyle.css';
 import backend from '../back_end/Login_Backend'
+import Storage from '../back_end/Storage'
 import {withRouter} from 'react-router-dom'
 
 import Card from '@material-ui/core/Card'
 import TextField from '@material-ui/core/TextField'
 import Fab from '@material-ui/core/Fab'
 import Loader from '@material-ui/core/LinearProgress'
-
-
+import {Checkbox, FormControlLabel} from "@material-ui/core";
 
 class LogIn extends React.Component {
     constructor(props) {
@@ -22,7 +22,8 @@ class LogIn extends React.Component {
             },
             loading: false,
             textFieldErrors: false,
-            errorLabel: ""
+            errorLabel: "",
+            saveLogin: false
         }
     }
 
@@ -64,8 +65,15 @@ class LogIn extends React.Component {
         })
     }
 
+    handleCheckboxChanges(event){
+        this.setState({
+            saveLogin: event.target.checked
+        })
+    }
+
     formSubmit(event) {
 
+        let s = new Storage();
 
 
         console.log(this.state.textFields);
@@ -81,12 +89,17 @@ class LogIn extends React.Component {
             this.state.textFields.password
         )
 
-                    .then(message => {
-                        this.setState({loading:false});
-                        this.props.history.push('/home');
-                        console.log("Success");
-                        console.log(message);
-                    })
+            .then(message => {
+                this.setState({loading: false});
+                this.props.history.push('/home');
+                console.log(message);
+                if(this.state.saveLogin){
+                    s.saveUser(this.state.textFields.username, this.state.textFields.password);
+                    console.log("User saved")
+                }else{
+                    console.log("user not saved")
+                }
+            })
 
 
             .catch(error => {
@@ -144,8 +157,18 @@ class LogIn extends React.Component {
                             error={this.state.textFieldErrors}
                             value={this.state.textFields.password}
                             onChange={this.handleChangePassword.bind(this)}
+
                         />
                         <p className={"errorLabel"}>{this.state.errorLabel}</p>
+
+                        <FormControlLabel control={
+                            <Checkbox
+                                checked={this.state.saveLogin}
+                                onChange={this.handleCheckboxChanges.bind(this)}
+                                color={"primary"}
+                            />
+                        } label={"Anmeldedaten speichern"}/>
+
                         <Fab
                             variant={"extended"}
                             className={"done_button"}
@@ -155,7 +178,7 @@ class LogIn extends React.Component {
                         </Fab>
 
                     </form>
-                    <p className={"helpText"}>Hast du noch keine Anmeldedaten? Beantrage sie in der offiziellen TCK-App oder direkt <a href={"www.google.com"}>hier.</a></p>
+                    <p className={"helpText"}>Hast du noch keine Anmeldedaten? Beantrage sie in der offiziellen TCK-App oder direkt <a target="_blank" href="mailto:office@lab73.at?subject=Anfrage%20auf%20TCK-Web%20Account&amp;body=Hallo%2C%20bitte%20senden%20Sie%20mir%20meine%20Anmeldedaten%20f%C3%BCr%20TCK-Web.%20">hier.</a></p>
                     <p className={"agbText"}>Mit der Anmeldung akzeptierst du unsere <a href={"/AGB"}>AGBs</a></p>
                 </div>
                 <div className={"grafik"}>
