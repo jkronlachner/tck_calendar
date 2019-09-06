@@ -1,7 +1,7 @@
 import React from "react";
-import '../LoginStyle.css';
-import backend from '../back_end/Login_Backend'
-import Storage from '../back_end/Storage'
+import './LoginStyle.css';
+import backend from '../../back_end/Login_Backend'
+import Storage from '../../back_end/Storage'
 import {withRouter} from 'react-router-dom'
 
 import Card from '@material-ui/core/Card'

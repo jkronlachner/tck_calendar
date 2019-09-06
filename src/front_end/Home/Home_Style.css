@@ -1,0 +1,51 @@
+.courtContainer{
+    flex-direction: column !important;
+}
+.courtCell{
+    padding: 5px;
+    background-color: #2a1547 !important;
+    color: white !important;
+}
+.dateLabel{
+    text-align: center;
+}
+.timeLabel{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+.topBar{
+    height: 5rem;
+    background-color: #2a1547;
+}
+.timetable {
+    overflow: scroll
+}
+.gridContainer{
+    padding: 0.5rem;
+}
+.todayButton{
+    color: white !important;
+}
+.normalRow{
+    min-height: 1rem;
+}
+.navigationBar{
+    background-color: #2a1547;
+    display: flex; justify-content: space-around;
+    padding: 1rem;
+    align-content: center;
+    color: white
+}
+
+.backgroundSheet {
+    margin: 0.5rem !important;
+    font-size: 0.7rem;
+    background-color: white !important;
+    border-radius: 20px !important;
+}
+body {
+    background-color: transparent !important;
+}
+.bottomBar {
+    margin-left: 0;
+}

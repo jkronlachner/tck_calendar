@@ -1,9 +1,7 @@
-import React from "react";
 
 class Storage {
-    constructor() {
 
-    }
+
 
     avaliable(){
         return (typeof(Storage)==="undefined")
@@ -20,6 +18,11 @@ class Storage {
         return {"password": password,
                 "username": username}
 
+    }
+
+    deleteUser(){
+        localStorage.removeItem("username");
+        localStorage.removeItem("password");
     }
 
 

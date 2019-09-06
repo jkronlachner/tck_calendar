@@ -1,20 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
-import Login from '../front_end/LogIn'
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import Login from '../front_end/Login/LogIn'
 import * as firebase from 'firebase/app'
 import Storage from '../back_end/Storage'
 import Login_Backend from "./Login_Backend";
+import Home from "../front_end/Home/Home"
+import Calendar from '../front_end/Home/Calendar'
 
 import {createMuiTheme} from "@material-ui/core";
 
 
-const theme = createMuiTheme({
+createMuiTheme({
     main: {
         primary: '#2a1547',
         secondary: '#8D00D8',
 
     }
-})
+});
 
 
 class Redirector extends React.Component {
@@ -43,30 +45,22 @@ class Redirector extends React.Component {
         };
         firebase.initializeApp(firebaseConfig);
 
-        var redirectToLogin = false;
-
         let s = new Storage();
         let user = s.loadUser();
-        let b = new Login_Backend();
         if(user.username === null){
             return(<Router key={"router"}>
-
-                <Redirect to={{
-                    pathname: "/login"
-                }}/>
-                <Route exact={true} path={"/login"} component={Login}/>
-                <Route exact={true} path={"/"}/>
-            </Router>)
-
-
-        }else{
-            return(<Router key={"router"}>
-
                 <Redirect to={{
                     pathname: "/home"
                 }}/>
                 <Route exact={true} path={"/login"} component={Login}/>
-                <Route exact={true} path={"/"}/>
+                <Route exact={true} path={"/home"} component={Home}/>
+            </Router>)
+        }else{
+            return(<Router key={"router"}>
+                <Redirect to={{
+                    pathname: "/home"}}/>
+                <Route exact={true} path={"/login"} component={Login}/>
+                <Route exact={true} path={"/home"} component={Home}/>
             </Router>)
         }
 
