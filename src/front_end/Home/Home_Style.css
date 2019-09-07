@@ -1,37 +1,49 @@
-.courtContainer{
+.courtContainer {
     flex-direction: column !important;
 }
-.courtCell{
+
+.courtCell {
     padding: 5px;
     background-color: #2a1547 !important;
     color: white !important;
+    margin: 2px;
 }
-.dateLabel{
+
+.dateLabel {
     text-align: center;
 }
-.timeLabel{
+
+.timeLabel {
     margin-top: auto !important;
     margin-bottom: auto !important;
 }
-.topBar{
+
+.topBar {
     height: 5rem;
     background-color: #2a1547;
 }
+
 .timetable {
     overflow: scroll
 }
-.gridContainer{
+
+.gridContainer {
     padding: 0.5rem;
 }
-.todayButton{
+
+.todayButton {
     color: white !important;
 }
-.normalRow{
+
+.normalRow {
     min-height: 1rem;
+    border-bottom: 1px solid rgba(207, 207, 207, 0.72);
 }
-.navigationBar{
+
+.navigationBar {
     background-color: #2a1547;
-    display: flex; justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
     padding: 1rem;
     align-content: center;
     color: white
@@ -43,9 +55,11 @@
     background-color: white !important;
     border-radius: 20px !important;
 }
+
 body {
     background-color: transparent !important;
 }
+
 .bottomBar {
     margin-left: 0;
 }

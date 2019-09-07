@@ -23,19 +23,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43ecdf8d666ee908aacce037b4cd72159e4741b" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f900edc44cb929c2267a16100a32851f6d5b477d" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/back_end/Entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/front_end/Home/Calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/front_end/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/front_end/Home/Home_Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/Login/LoginStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/back_end/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/back_end/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/back_end/Storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/back_end/Storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/front_end/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/Login/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/front_end/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/front_end/Home/Home_Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/front_end/Home/Home_Style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +96,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -177,7 +167,8 @@
       <workItem from="1563967249499" duration="1787000" />
       <workItem from="1563970774986" duration="855000" />
       <workItem from="1564032508715" duration="221000" />
-      <workItem from="1567765564104" duration="11872000" />
+      <workItem from="1567765564104" duration="14959000" />
+      <workItem from="1567848502791" duration="5508000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1559506123802</created>
@@ -221,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562076791869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="New Version, with new own Better calendar.&#10;Working, without data">
+      <created>1567788052558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567788052558</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -241,7 +239,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -253,7 +253,8 @@
     <MESSAGE value="Added Routing, Login-Frontend" />
     <MESSAGE value="Finished Login, Back-end and Front-end&#10;Routing&#10;Updaed Firebase configuration" />
     <MESSAGE value="Now you can also save your login data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now you can also save your login data." />
+    <MESSAGE value="New Version, with new own Better calendar.&#10;Working, without data" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Version, with new own Better calendar.&#10;Working, without data" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
