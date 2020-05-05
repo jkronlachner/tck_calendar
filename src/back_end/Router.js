@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Login from '../front_end/Login/LogIn'
 import * as firebase from 'firebase/app'
 import Storage from '../back_end/Storage'
-import Login_Backend from "./Login_Backend";
 import Home from "../front_end/Home/Home"
-import Calendar from '../front_end/Home/Calendar'
 
 import {createMuiTheme} from "@material-ui/core";
 
@@ -25,13 +23,6 @@ class Redirector extends React.Component {
         this.state = {}
     }
 
-
-
-    componentDidMount() {
-    }
-
-    componentDidUpdate() {
-    }
 
     render() {
         const firebaseConfig = {

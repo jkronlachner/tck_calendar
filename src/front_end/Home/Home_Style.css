@@ -1,3 +1,16 @@
+html, body{
+    font-family: sans-serif;
+    overflow: scroll;
+    background-color: transparent;
+}
+table, th, td {
+    border: 1px solid #818181;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+
 .courtContainer {
     flex-direction: column !important;
 }
@@ -53,7 +66,6 @@
     margin: 0.5rem !important;
     font-size: 0.7rem;
     background-color: white !important;
-    border-radius: 20px !important;
 }
 
 body {

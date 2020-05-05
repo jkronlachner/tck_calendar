@@ -5,11 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.1.3",
     "@material-ui/icons": "^4.2.1",
-    "firebase": "^6.2.4",
-    "firebase-functions": "^2.3.1",
-    "http2": "^3.3.7",
-    "jqwidgets-framework": "^8.1.2",
-    "moment": "^2.24.0",
+    "firebase": "^7.14.1",
     "react": "^16.8.6",
     "react-big-calendar": "^0.21.0",
     "react-dom": "^16.8.6",
@@ -36,6 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage" : "tck.lab73.at"
+    "homepage": [
+      "tck.lab73.at"
+    ]
   }
 }
