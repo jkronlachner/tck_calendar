@@ -37,7 +37,7 @@ function Home() {
                     var data = result.data();
                     data =  {
                         ...data,
-                        "teilnehmer" : teilnehmer
+                        "all_teilnehmer" : teilnehmer
                     };
                     if (!results.includes(data)) {
                         results.push(data)
@@ -105,21 +105,22 @@ function Home() {
         }
         return data.map(value => {
             //Get admin and if there is none, write none
-            let admin = Array.from(value["teilnehmer"]).reduce((previousValue, currentValue) => previousValue + ", " + currentValue);
+            console.log(value)
+            let admin = Array.from(value["all_teilnehmer"]).reduce((previousValue, currentValue) => previousValue + ", " + currentValue);
             if(admin === null){admin = ""}
             //checks if its today or tomoorrow and puts it in the right column
             if (isToday(value["datum"].toDate()) && column === 1) {
                 //Checks if time is within
-                if (isTimeWithin(value, row+5)) {
+                if (isTimeWithin(value, row+7)) {
                     return <Grid item xs zeroMinWidth>
                         <Paper className={'courtCell'}>
-                            <Typography noWrap variant={"body2"}>Platz {value["platz"][0]}</Typography>
-                            <Typography noWrap variant={"body2"}>{admin}</Typography>
+                            <Typography noWrap variant={"body2"}>Platz {value["platz"].reduce((old, val) => old + ", " + val)}</Typography>
+                            {value["privat"] ? <Typography noWrap variant={"body2"}>{admin}</Typography> : <Typography noWrap variant={"body2"}>{value["beschreibung"]}</Typography>}
                         </Paper>
                     </Grid>
                 }
             } else if (isTomorrow(value["datum"].toDate()) && column === 2) {
-                if (isTimeWithin(value, row+5)) {
+                if (isTimeWithin(value, row+7)) {
                     return <Grid item xs zeroMinWidth>
                         <Paper className={'courtCell'}>
                             <Typography noWrap variant={"body2"}>Platz {value["platz"][0]}</Typography>

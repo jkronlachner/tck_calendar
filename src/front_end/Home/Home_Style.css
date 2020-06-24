@@ -1,7 +1,7 @@
 html, body{
     font-family: sans-serif;
     overflow: scroll;
-    background-color: transparent;
+    background-color: #0C1417;
 }
 table, th, td {
     border: 1px solid #818181;
@@ -17,7 +17,7 @@ th, td {
 
 .courtCell {
     padding: 5px;
-    background-color: #2a1547 !important;
+    background-color: #021B79 !important;
     color: white !important;
     margin: 2px;
 }
@@ -33,7 +33,7 @@ th, td {
 
 .topBar {
     height: 5rem;
-    background-color: #2a1547;
+    background-color: #021B79;
 }
 
 .timetable {
@@ -54,7 +54,7 @@ th, td {
 }
 
 .navigationBar {
-    background-color: #2a1547;
+    background-color: #021B79;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
